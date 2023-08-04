@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background: gold; */
+
+}
+.nav {
+    padding: 20px 20px;
+    /* width: 100vw; */
+    background: rgb(158, 244, 194);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
