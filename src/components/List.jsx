@@ -1,13 +1,21 @@
 import React from 'react'
+import './List.css'
 
-const List = ({name,age}) => {
-    console.log(name);
-  const listItems = name.map((name,index) => <li key={index}>{name}</li>);
-  console.log(listItems);
+const List = ({name,age,isDone}) => {
+    console.log(isDone);
+
+    const style = {
+        bgStyle:{
+            
+        }
+    }
+//   const listItems = name.map((name,index) => <li key={index}>{name}, {age}</li>);
+//   console.log(listItems);
   return (
-    <div>
-      <ul>{listItems}</ul>
-      {age}
+    <div className='list'>
+      {/* <ul>{listItems}</ul> */}
+      <p>{name}</p>
+      <p>{age}</p>
     </div>
   )
 }
