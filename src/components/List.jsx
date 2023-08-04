@@ -2,7 +2,7 @@ import React from 'react'
 import './List.css'
 
 const List = ({name,isDone}) => {
-    console.log(isDone);
+    // console.log(isDone);
 
     // const myStyle = {
     //     bgStyle:{
@@ -15,6 +15,7 @@ const List = ({name,isDone}) => {
   return (
     <div className={`list ${isDone && "done"}`} >
       {/* <ul>{listItems}</ul> */}
+        <input type="checkbox" />
       <p>{name}</p>
     </div>
   )
