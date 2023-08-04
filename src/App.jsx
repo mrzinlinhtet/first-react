@@ -11,9 +11,9 @@ const App = () => {
 
   return (
     <>
-      <List name={nameList[0]} age={22} isDone={true} />
-      <List name={nameList[1]} age={22} isDone={false} />
-      <List name={nameList[2]} age={22} isDone={false} />
+      <List name={nameList[0]} isDone />
+      <List name={nameList[1]} isDone />
+      <List name={nameList[2]} isDone={false} />
       <div className="container">
         <Nav />
         <div className="midContainer">
