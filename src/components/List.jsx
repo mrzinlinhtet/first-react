@@ -1,5 +1,7 @@
 import React from "react";
 import "./List.css";
+import {BsFillTrashFill} from "react-icons/bs"
+import {BiEdit} from "react-icons/bi"
 
 const List = ({ name, isDone, onChecked, id, onEdit, onDelete }) => {
   // console.log(isDone);
@@ -8,7 +10,7 @@ const List = ({ name, isDone, onChecked, id, onEdit, onDelete }) => {
   };
 
   const handleEdit = () => {
-    onEdit()
+    onEdit(id)
   }   
 
   const handleDelete = () => {
@@ -32,8 +34,8 @@ const List = ({ name, isDone, onChecked, id, onEdit, onDelete }) => {
         <p>{name}</p>
       </div>
       <div className="btnContainer">
-        <button onClick={handleEdit}>Edit</button>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleEdit}><BiEdit /></button>
+        <button onClick={handleDelete}><BsFillTrashFill /></button>
       </div>
     </div>
   );
